@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/doing-something-why/less-fe/static/css/main.b19b617b.css",
+    "main.js": "/doing-something-why/less-fe/static/js/main.178d4718.js",
+    "index.html": "/doing-something-why/less-fe/index.html",
+    "main.b19b617b.css.map": "/doing-something-why/less-fe/static/css/main.b19b617b.css.map",
+    "main.178d4718.js.map": "/doing-something-why/less-fe/static/js/main.178d4718.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b19b617b.css",
+    "static/js/main.178d4718.js"
+  ]
+}
