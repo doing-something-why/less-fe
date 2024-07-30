@@ -1,5 +1,6 @@
 {
   "name": "fashion-resale-finder",
+  "homepage": "https://doing-something-why.github.io/less-fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +12,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://doing-something-why.github.io/less-fe",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
