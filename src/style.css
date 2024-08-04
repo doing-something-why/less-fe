@@ -1,12 +1,11 @@
-/* Existing styles... */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: black;
-    margin: 0; /* Reset margin for body */
-    padding: 0; /* Reset padding for body */
-    line-height: 1.5; /* Optional: Set a comfortable line height */
+    font-size: 1rem;
+    margin: 0; 
+    padding: 0;
+    line-height: 1.5;
 }
 
 p, h1, h2, h3, h4, h5, h6, a, span, div {
@@ -180,6 +179,14 @@ button {
     text-align: center;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 header input, header select, header button {
     padding: 10px;
     margin: 5px;
@@ -274,4 +281,76 @@ header input, header select, header button {
     .product-card-wrapper {
         flex: 0 1 calc(50% - 20px);
     }
+}
+
+.search-input-wrapper {
+    position: relative;
+    margin: 24px 12px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#searchForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#country-nav {
+    margin: 12px;
+    padding: 10px;
+}
+
+button {
+    margin: 12px;
+    padding: 10px;
+}
+
+/* Existing styles... */
+
+.logo-container {
+    position: relative;
+    display: inline-flex; /* Changed to inline-flex to align the items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+.logo {
+    height: 40px; /* Adjust height as needed */
+    
+}
+
+.hand-draw-svg {
+    height: 70%; /* Set height to 90% of the logo height */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: -5px;
+    pointer-events: none; /* Ensure it doesn't interfere with the hover event */
+}
+
+.hand-draw-svg path {
+    stroke-dasharray: 1000; /* Large enough to cover the path length */
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 1s ease-in; /* Adjust duration as needed */
+}
+
+.logo-container:hover .hand-draw-svg path {
+    stroke-dashoffset: 0;
 }
