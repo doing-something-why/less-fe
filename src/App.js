@@ -57,7 +57,7 @@ const App = () => {
             </header>
             <div id="results" className="results-section">
                 {loading && <p>Loading...</p>}
-                {error && <p>{error}</p>}
+                {error && <p>{error}</p>}   
                 {products.length === 0 && !loading && <p>No results found.</p>}
                 {products.map((product, index) => (
                     <ProductCard key={index} product={product} />
